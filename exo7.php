@@ -19,10 +19,10 @@ function concatenationChaines($tableau) {
 }
 
 // Exemple d'utilisation
-$tableauChaines = array("Bonjour", " ", "monde", "!");
+$tableauChaines = array("Bonjour", " meblo ", "barham", "!");
 $resultatConcatenation = concatenationChaines($tableauChaines);
 
-echo "Tableau de chaînes : " . implode(', ', $tableauChaines) . "\n";
+echo "Tableau de chaînes : " . implode(' - ', $tableauChaines) . "\n";
 echo "Nouvelle chaîne : $resultatConcatenation";
 
 ?>

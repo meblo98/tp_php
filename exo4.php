@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
 <?php
 
 function compterVoyellesDansChaine($chaine) {
@@ -22,13 +14,10 @@ function compterVoyellesDansChaine($chaine) {
 }
 
 // Exemple d'utilisation avec un tableau de chaînes
-$tableauChaines = array("Hello World", "Bonjour", "Programming");
+$tableauChaines = ["Hello World", "meblo barham", "Programming"];
 foreach ($tableauChaines as $chaine) {
     $resultat = compterVoyellesDansChaine($chaine);
-    echo "Nombre de voyelles dans '$chaine' : $resultat\n";
+    echo "Nombre de voyelles dans '$chaine' : $resultat<br>";
 }
 
 ?>
-
-</body>
-</html>

@@ -28,14 +28,14 @@ function calculerFrequencesCaracteres($chaine) {
 }
 
 // Exemple d'utilisation
-$chaine = "programming";
+$chaine = "Mouhamed el bachir lo";
 $resultatFrequences = calculerFrequencesCaracteres($chaine);
 
-echo "Chaîne de caractères : $chaine\n";
-echo "Fréquences des caractères :\n";
+echo "Chaîne de caractères : $chaine<br>";
+echo "Fréquences des caractères :<br>";
 
 foreach ($resultatFrequences as $caractere => $frequence) {
-    echo "$caractere : $frequence\n";
+    echo "$caractere : $frequence<br>";
 }
 
 ?>

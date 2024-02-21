@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
 <?php
 
 function supprimerDoublons($tableau) {
@@ -19,13 +11,10 @@ function supprimerDoublons($tableau) {
 }
 
 // Exemple d'utilisation
-$tableauAvecDoublons = array(1, 2, 3, 4, 2, 5, 6, 3);
+$tableauAvecDoublons = [1, 2, 3, 4, 2, 5, 6, 3];
 $tableauSansDoublons = supprimerDoublons($tableauAvecDoublons);
 
-echo "Tableau avec doublons : " . implode(', ', $tableauAvecDoublons) . "\n";
+echo "Tableau avec doublons : " . implode(', ', $tableauAvecDoublons) . "<br>";
 echo "Tableau sans doublons : " . implode(', ', $tableauSansDoublons);
 
 ?>
-
-</body>
-</html>

@@ -33,7 +33,7 @@ function calculerMedian($tableau) {
 }
 
 // Exemple d'utilisation
-$tableauEntiers = array(4, 2, 7, 1, 5, 3);
+$tableauEntiers = [4, 2, 7, 1, 5, 3];
 $resultatMedian = calculerMedian($tableauEntiers);
 
 echo "Tableau d'entiers : " . implode(', ', $tableauEntiers) . "\n";
