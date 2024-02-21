@@ -8,21 +8,26 @@
 <body>
 <?php
 
-function calculerProduitTableau($tableau) {
-    $produit = 1;
+function determinerCovid19($symptomes) {
+    // Vérifier la présence de symptômes associés à la COVID-19
+    $symptomesCovid = array("fièvre", "toux", "difficultés respiratoires", "perte de goût ou d'odorat");
 
-    foreach ($tableau as $element) {
-        $produit *= $element;
+    foreach ($symptomesCovid as $symptome) {
+        if (in_array($symptome, $symptomes)) {
+            return "Le patient pourrait être atteint de la COVID-19. Consultez un professionnel de la santé.";
+        }
     }
 
-    return $produit;
+    return "Le patient ne présente pas de symptômes typiques de la COVID-19. Cependant, consultez un professionnel de la santé pour une évaluation plus approfondie si nécessaire.";
 }
 
 // Exemple d'utilisation
-$tableauEntiers = array(2, 4, 6, 8, 10);
-$resultat = calculerProduitTableau($tableauEntiers);
+$symptomesPatient = array("fièvre", "toux");
 
-echo "Le produit des éléments du tableau est : $resultat";
+$resultat = determinerCovid19($symptomesPatient);
+
+echo "Symptômes du patient : " . implode(', ', $symptomesPatient) . "\n";
+echo "Résultat de l'évaluation : $resultat";
 
 ?>
 
